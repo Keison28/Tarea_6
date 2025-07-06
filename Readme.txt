@@ -18,7 +18,7 @@ Requisitos
 Instalación y Configuración
 
 1. Clonar el repositorio  
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Keison28/Tarea_6
 
 2. Configurar la base de datos  
    - Crear una base de datos llamada serie_db (o el nombre que hayas definido).  
@@ -35,7 +35,7 @@ Instalación y Configuración
 
 5. Abrir la aplicación  
    En el navegador, acceder a:  
-   http://localhost/tu_carpeta_proyecto/index.php
+   http://localhost/
 
 ---
 
@@ -56,9 +56,9 @@ Librerías usadas
 
 Autor
 
-- Nombre completo: Tu Nombre  
-- Matrícula: 123456789  
-- Contacto: tu.email@dominio.com
+- Nombre completo: Keison J. Cerda Batista 
+- Matrícula: 20240228
+- Contacto: key112806@gmail.com
 
 ---
 
