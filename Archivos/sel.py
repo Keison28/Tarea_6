@@ -21,7 +21,7 @@ class TestCRUDPersonajes(unittest.TestCase):
     def test_crud(self):
         driver = self.driver
 
-        # Login falso
+        # Login
         user = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='user']")))
         user.clear()
         user.send_keys("20240228@itla.edu.do")
