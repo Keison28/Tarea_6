@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-08-08 10:43:55</p>
+                <p class='attribute'><strong>Duration: </strong>13.24 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestCRUDPersonajes</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_crud</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.67); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x6cfd23+62915]
+	GetHandleVerifier [0x0x6cfd64+62980]
+	(No symbol) [0x0x503e13]
+	(No symbol) [0x0x515901]
+	(No symbol) [0x0x5149f0]
+	(No symbol) [0x0x50b0d2]
+	(No symbol) [0x0x50b1b2]
+	(No symbol) [0x0x5095ca]
+	(No symbol) [0x0x50cb93]
+	(No symbol) [0x0x5936e4]
+	(No symbol) [0x0x5713dc]
+	(No symbol) [0x0x5926ea]
+	(No symbol) [0x0x5711d6]
+	(No symbol) [0x0x540833]
+	(No symbol) [0x0x5416a4]
+	GetHandleVerifier [0x0x938d13+2590131]
+	GetHandleVerifier [0x0x933f5a+2570234]
+	GetHandleVerifier [0x0x6f59da+217722]
+	GetHandleVerifier [0x0x6e6048+153832]
+	GetHandleVerifier [0x0x6ec4ad+179533]
+	GetHandleVerifier [0x0x6d7728+94152]
+	GetHandleVerifier [0x0x6d78b2+94546]
+	GetHandleVerifier [0x0x6c2bca+9322]
+	BaseThreadInitThunk [0x0x774cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776782ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7767827e+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\php xampp\htdocs\Tarea_6\proyecto.py", line 58, in test_crud
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[name='index']"))).click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 129, in until
+    value = method(self._driver)
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 625, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 252, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 272, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+                      ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 341, in is_displayed
+    return self.parent.execute_script(f"/* isDisplayed */return ({isDisplayed_js}).apply(null, arguments);", self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 551, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\keison\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.67); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x6cfd23+62915]
+	GetHandleVerifier [0x0x6cfd64+62980]
+	(No symbol) [0x0x503e13]
+	(No symbol) [0x0x515901]
+	(No symbol) [0x0x5149f0]
+	(No symbol) [0x0x50b0d2]
+	(No symbol) [0x0x50b1b2]
+	(No symbol) [0x0x5095ca]
+	(No symbol) [0x0x50cb93]
+	(No symbol) [0x0x5936e4]
+	(No symbol) [0x0x5713dc]
+	(No symbol) [0x0x5926ea]
+	(No symbol) [0x0x5711d6]
+	(No symbol) [0x0x540833]
+	(No symbol) [0x0x5416a4]
+	GetHandleVerifier [0x0x938d13+2590131]
+	GetHandleVerifier [0x0x933f5a+2570234]
+	GetHandleVerifier [0x0x6f59da+217722]
+	GetHandleVerifier [0x0x6e6048+153832]
+	GetHandleVerifier [0x0x6ec4ad+179533]
+	GetHandleVerifier [0x0x6d7728+94152]
+	GetHandleVerifier [0x0x6d78b2+94546]
+	GetHandleVerifier [0x0x6c2bca+9322]
+	BaseThreadInitThunk [0x0x774cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776782ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7767827e+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 13.24 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

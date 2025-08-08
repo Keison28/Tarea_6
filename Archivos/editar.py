@@ -7,8 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
+# Ruta a tu ChromeDriver
 ruta_driver = r"C:\Users\keison\Downloads\chromedriver-win32\chromedriver-win32\chromedriver.exe"
 
+# Crear servicio
 service = Service(executable_pth=ruta_driver)
 
 # Inicializar el navegador
@@ -45,6 +47,5 @@ guardar_btn = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))
 )
 guardar_btn.click()
-
 
 

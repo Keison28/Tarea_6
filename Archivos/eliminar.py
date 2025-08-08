@@ -7,8 +7,11 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
+
+# Ruta a tu ChromeDriver
 ruta_driver = r"C:\Users\keison\Downloads\chromedriver-win32\chromedriver-win32\chromedriver.exe"
 
+# Crear servicio
 service = Service(executable_pth=ruta_driver)
 
 # Inicializar el navegador
@@ -29,4 +32,3 @@ editar_boton.click()
 WebDriverWait(driver, 2).until(EC.alert_is_present())
 alert = driver.switch_to.alert
 alert.accept()
-

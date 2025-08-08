@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([$nombre, $color, $tipo, $nivel, $foto, $id]);
 
     echo "<div class='alert alert-success'>Personaje actualizado correctamente.</div>";
-    echo "<a href='index.php' class='btn btn-primary mt-3'>Volver a la lista</a>";
+    echo "<a href='index.php' name='index' class='btn btn-primary mt-3'>Volver a la lista</a>";
     include 'includes/footer.php';
     exit;
 }
@@ -62,13 +62,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="col-md-6">
     <label class="form-label">Nivel</label>
     <input type="number" name="nivel" value="<?= htmlspecialchars($personaje['nivel']); ?>" class="form-control" required>
-  </div>
+</div>
   <div class="col-md-12">
     <label class="form-label">Foto (dejar en blanco para no cambiar)</label>
     <input type="file" name="foto" class="form-control">
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Actualizar</button>
+    <button name="edit" type="submit" class="btn btn-primary">Actualizar</button>
     <a href="index.php" class="btn btn-secondary">Cancelar</a>
   </div>
 </form>

@@ -4,7 +4,7 @@
 <div class="container mt-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="text-primary">🌊 Lista de Personajes - One Piece</h2>
-    <a href="agregar.php" class="btn btn-success">+ Agregar Personaje</a>
+    <a href="agregar.php" name="agregar" class="btn btn-success">+ Agregar Personaje</a>
   </div>
 
   <?php

@@ -51,11 +51,11 @@
         <label for="foto" class="form-label">Foto del personaje</label>
         <input type="file" class="form-control" name="foto" accept="image/*">
       </div>
-      <button type="submit" class="btn btn-primary w-100">Agregar Personaje ➕</button>
+      <button type="submit" name="create" class="btn btn-primary w-100">Agregar Personaje ➕</button>
     </form>
 
     <div class="text-center mt-3">
-      <a href="index.php" class="btn btn-secondary">Volver al inicio</a>
+      <a href="index.php" name="index" class="btn btn-secondary">Volver al inicio</a>
     </div>
   </div>
 </div>
